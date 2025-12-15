@@ -1,0 +1,318 @@
+/* styles.css - Portfolio Site Styles */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #2d3e50 60%, #3a5068 100%);
+    color: #fff;
+    padding: 2.5rem 0 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(45,62,80,0.08);
+    border-bottom: 4px solid #ffd700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    outline: none;
+}
+
+nav a:focus, nav a:hover {
+    color: #222;
+    background: #ffd700;
+    outline: 2px solid #ffd700;
+    outline-offset: 2px;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h1, h2 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-top: 0;
+}
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.04em;
+}
+
+header p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 0;
+    color: #ffd700;
+    letter-spacing: 0.02em;
+}
+
+#about-me {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+#about-me p {
+    font-size: 1.15rem;
+    margin: 0 auto;
+    max-width: 600px;
+    color: #444;
+}
+
+#projects {
+    margin-bottom: 2.5rem;
+}
+#projects h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+#projects article {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(45,62,80,0.08);
+    margin-bottom: 2rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: box-shadow 0.2s;
+}
+#projects article:hover {
+    box-shadow: 0 8px 24px rgba(45,62,80,0.15);
+}
+#projects figure {
+    margin: 0;
+}
+#projects figcaption {
+    font-size: 1.05rem;
+    color: #2d3e50;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+#projects p {
+    margin: 0;
+    color: #333;
+}
+
+#projects img {
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    display: block;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#skills {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    margin-bottom: 2.5rem;
+}
+#skills h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+#skills li {
+    background: #e0e7ef;
+    padding: 0.5rem 1.2rem 0.5rem 2.2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    position: relative;
+    font-size: 1.05rem;
+}
+#skills li::before {
+    content: '\2714';
+    position: absolute;
+    left: 0.8rem;
+    color: #ffd700;
+    font-size: 1.1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#contact {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 1.5rem 1rem 2rem 1rem;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact label {
+    font-weight: 600;
+}
+
+#contact input, #contact textarea {
+    padding: 0.5rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#contact button {
+    background: #2d3e50;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#contact button:focus, #contact button:hover {
+    background: #ffd700;
+    color: #222;
+    outline: 2px solid #2d3e50;
+    outline-offset: 2px;
+}
+
+footer {
+    background: #2d3e50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 0 0.5rem;
+    }
+    #projects article {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        background: #2d3e50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        display: none;
+        z-index: 1000;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav .hamburger {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 24px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+    nav .hamburger span,
+    nav .hamburger span::before,
+    nav .hamburger span::after {
+        display: block;
+        position: absolute;
+        width: 28px;
+        height: 4px;
+        background: #ffd700;
+        border-radius: 2px;
+        transition: 0.3s;
+        content: '';
+    }
+    nav .hamburger span {
+        top: 14px;
+        left: 2px;
+    }
+    nav .hamburger span::before {
+        top: -10px;
+        left: 0;
+    }
+    nav .hamburger span::after {
+        top: 10px;
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    #about-me, #skills, #contact {
+        padding: 1rem 0.5rem;
+    }
+    #projects article {
+        padding: 1rem 0.5rem;
+    }
+}

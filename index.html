@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal developer portfolio of [Your Name], showcasing projects, skills, and contact information.">
+    <title>[Your Name] | Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav role="navigation" aria-label="Main Navigation">
+            <div class="hamburger" tabindex="0" aria-label="Open navigation menu" aria-controls="main-nav-list" aria-expanded="false" role="button">
+                <span></span>
+            </div>
+            <ul id="main-nav-list">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>[Your Name]</h1>
+        <p>Web Developer & Problem Solver</p>
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a passionate web developer with experience in building accessible and user-friendly web applications. I enjoy solving problems and learning new technologies.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="project-filters" aria-label="Filter projects">
+                <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+            </div>
+            <article data-category="web">
+                <figure>
+                    <img src="project1.png" alt="Screenshot of Project 1 homepage" class="project-img">
+                    <figcaption>Project 1: Portfolio Website</figcaption>
+                </figure>
+                <p>A personal portfolio website built with HTML, CSS, and JavaScript.</p>
+            </article>
+            <article data-category="app">
+                <figure>
+                    <img src="project2.png" alt="Screenshot of Project 2 dashboard" class="project-img">
+                    <figcaption>Project 2: Task Manager App</figcaption>
+                </figure>
+                <p>A task management app to organize daily activities efficiently.</p>
+            </article>
+            <!-- Lightbox Modal -->
+            <div id="lightbox-modal" class="lightbox-modal" aria-modal="true" role="dialog" tabindex="-1" style="display:none;">
+                <div class="lightbox-content">
+                    <button class="lightbox-close" aria-label="Close image">&times;</button>
+                    <img src="" alt="Project image" id="lightbox-img">
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>Accessibility (a11y)</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>
